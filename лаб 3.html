@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="lab3.css">
+<title>Главная страница</title>
+<script src="lab3.js"> </script>
+</head> 
+
+
+<body>
+    <header></header>
+	 
+	<div class="nav_article_aside">
+    <nav>
+	<p class="p_style"><a type="button">Главная страница</a></p>
+	<p class="p_style"><a type="button" onclick='OpenResult()'>Результаты</a></p>
+	</nav>	 
+	
+	<article class="background_image"> 	
+	<form action="" name="form" onsubmit="return false;">
+	<fieldset>
+	<legend>Личная информация</legend>
+	<label for="name">Имя:</label>
+	<input type ="text" placeholder="Иванов Иван" id="name">
+	<br/>
+	<br/> 
+      <span>Пол</span>
+      <label><input type="radio" name="sex" value="мужской">мужской</label>
+	  <label><input type="radio" name="sex" value="женский">женский</label>
+    <br/><br/>
+	<span>E-mail:</span><input type="email" id="email" placeholder="IvanovIvan@mail.ru">
+	</fieldset>
+	
+	<fieldset> 
+	<legend>Дата опроса</legend>
+	    <span>Неделя:</span>
+		<input type="week" id="weekList" list="weekList">
+		<datalist id="weekList">
+	</datalist>
+	</fieldset>
+	
+	<fieldset> 
+	<legend>Предпочтения</legend>
+		<div>
+			<input name="check1" type="checkbox" value="check1">
+			<label for="check1">Меня все устраивает в ресторане</label><br>
+		</div><br/>
+		<span>Когда вы посещаете рестораны?</span>
+		<select id="select"> 
+			<option></option>		
+			<option value = "утро">Утро</option>
+			<option value = "день">День</option>
+			<option value = "вечер">Вечер</option>
+			<option value = "ночь">Ночь</option>
+		</select>
+		
+		<div>
+		<p>Что вы хотели бы улучшить в ресторане?</p>
+		<textarea rows="7" cols="35" id="textarea"></textarea>
+		</div>
+	</fieldset>
+	 
+	 <input type="reset" value="Очистить">
+	<input type="button"  onclick="Button()" value="Отправить">
+	 </form>
+	 
+	</article>
+	
+	<aside></aside>
+	</div>
+	
+    <footer><p class="textFooter">Рудько Ксения </p><footer>
+</body>
+</html>

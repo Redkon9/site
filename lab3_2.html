@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+<script src="lab3.js"> </script>
+    <link rel="stylesheet" href="lab3.css"/>
+<script src="lab3_2.js"> </script>
+</head>
+
+<body onload="Print()">
+        <header>
+        </header>
+		
+        <div class="nav_article_aside">
+		<nav>
+			<p class="p_style"><a type="button" onclick='mainPage()'>Главная страница</a></p>
+			<p class="p_style"><a type="button">Результаты</a>
+		</nav>	
+        <article class="background_image"> 
+		
+			<div class="withTable">
+				<table class="infoTable">
+                <caption><h1>Результирующая таблица</h1></caption><br>
+                <tr>
+                    <th> Имя</th>
+                    <th>Пол</th>
+                    <th>E-mail</th>
+                    <th>Неделя опроса</th>
+                    <th>Все устраивает</th>
+                    <th>Время просмотра</th>
+					 <th>Улучшить</th>
+                </tr>
+				<tbody id="tbody"></tbody>
+				</table>
+			</div>
+			
+			<div>			
+			<select style="margin: 20px 50px 50px 350px;font-size:20px" id="select"> </select>
+			</div>
+        </article>
+           
+        <aside></aside>
+        </div>
+		
+        <footer><p class="textFooter">Рудько Ксения </p><footer>
+    </body>
+</html>

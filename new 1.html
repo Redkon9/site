@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<script>
+function myF(){
+    var a = document.getElementById("Name").value;
+    var b = document.getElementById("Surname").value; 
+    var c = document.getElementById("Patronymic").value; 
+    var d = document.getElementById("Num").value; 
+    localStorage.setItem("a",a);
+    localStorage.setItem("b",b);
+    localStorage.setItem("c",c);
+    localStorage.setItem("d",d);
+    window.location = "1.html";
+}
+</script>
+</head>
+<body>
+    <form>
+        Имя: <input type = "text" id = "Name" autofocus ><br>
+        Фамилия:<input type = "text" id = "Surname"><br>
+        Отчество: <input type = "text" id = "Patronymic">   <br>
+        Номер билета посетителя: <input type = "text" id = "Num"> <br>
+        <input type="button" onClick="myF()" value="Зарегистрироваться">       <br>
+    </form>
+</body>
+</html>
